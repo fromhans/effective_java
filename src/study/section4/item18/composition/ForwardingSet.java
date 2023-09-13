@@ -44,12 +44,12 @@ public class ForwardingSet<E> implements Set<E> {
 
     @Override
     public boolean add(E e) {
-        return false;
+        return s.add(e);
     }
 
     @Override
     public boolean remove(Object o) {
-        return false;
+        return s.remove(o);
     }
 
     @Override
