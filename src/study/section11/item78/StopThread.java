@@ -5,10 +5,10 @@ import java.util.concurrent.TimeUnit;
 public class StopThread {
     private static boolean stopRequested;
 
-    private static synchronized void requestStop() {
+    private static void requestStop() {
         stopRequested = true;
     }
-    private static synchronized boolean stopRequested() {
+    private static boolean stopRequested() {
         return stopRequested;
     }
 

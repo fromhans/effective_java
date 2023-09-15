@@ -17,8 +17,8 @@ public class ObservableSet<E> extends ForwardingSet<E> {
         super(s);
     }
 
-    //private final List<SetObserver<E>> observers = new ArrayList<>();
-    private final List<SetObserver<E>> observers = new CopyOnWriteArrayList<>();
+    private final List<SetObserver<E>> observers = new ArrayList<>();
+    //private final List<SetObserver<E>> observers = new CopyOnWriteArrayList<>();
 
     public void addObserver(SetObserver<E> observer) {
         synchronized (observers) {
